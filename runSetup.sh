@@ -1,26 +1,19 @@
-# echo "Setting up dependencies..."
-# 
-# echo "#### Installing Base-devel"
-# sudo pacman -S base-devel --noconfirm
-# 
-# echo "#### Installing yay"
-# sudo pacman -S yay --noconfirm
-# 
+echo "Setting up dependencies..."
+
+# echo "#### Essenctials"
+# sudo apt install build-essential
+
 # echo "#### Installing Git"
-# sudo pacman -S git --noconfirm
-# 
+# sudo apt install git
+
 # echo "#### Installing CMake"
-# sudo pacman -S cmake --noconfirm
-# 
+# sudo apt install cmake 
+
 # echo "#### Installing lm-sensors"
-# sudo pacman -S lm_sensors --noconfirm
+# sudo apt install lm-sensors 
 
 # echo "### Installing Sloc Cloc and Code (scc)"
-# git clone https://github.com/boyter/scc.git
-# cd scc
-# go build
-# sudo cp scc /usr/local/bin/
-# cd ..
+# sudo snap install scc 
 
 # echo "#### Installing Powercap"
 # git clone https://github.com/powercap/powercap.git
@@ -31,11 +24,10 @@
 # make
 # sudo make install
 
-# cd ..
-# cd ..
-
+# cd ../../
+ 
 # echo "#### Installing package config"
-# sudo pacman -S pkgconf --noconfirm
+# sudo apt install pkg-config 
 
 # echo "#### Installing Raplcap"
 # git clone https://github.com/powercap/raplcap.git
@@ -45,43 +37,51 @@
 # cmake ..
 # make
 # sudo make install
+ 
+# cd ../../
 
-# cd ..
-# cd ..
-# 
 # echo "#### Installing Python"
-# sudo pacman -S python --noconfirm
-# 
+# sudo apt install python3 python3-pip
+
 # echo "#### Installing Python Benchmark"
-# yay -S python-pyperformance --noconfirm
-# 
+# sudo apt install python3-venv
+# python3 -m venv myenv
+# source myenv/bin/activate
+# pip install pyperformance
+
 # echo "#### Installing Haskell"
-# sudo pacman -S ghc --noconfirm
-#git clone https://gitlab.haskell.org/ghc/nofib.git
+# sudo apt install ghc cabal-install 
 
-# 
 # echo "#### Installing Haskell Benchmark"
-# git clone https://github.com/ghc/nofib.git
-# 
-# echo "#### Installing Java"
-# sudo pacman -S jdk-openjdk --noconfirm
-# 
-#echo "#### Installing Java Benchmark"
-#cd ./Languages/Java
-#wget https://download.dacapobench.org/chopin/dacapo-23.11-chopin.zip
-#cd ../../
+# cd ./Languages/Haskell
+# git clone https://gitlab.haskell.org/ghc/nofib.git
+# cd ../../
 
-# echo "#### Installing C"
-# sudo pacman -S gcc --noconfirm
-# 
+# echo "#### Installing Java"
+# sudo apt install default-jdk
+
+# echo "#### Installing Java Benchmark"
+# cd ./Languages/Java
+# wget https://download.dacapobench.org/chopin/dacapo-23.11-chopin.zip
+# unzip dacapo-23.11-chopin.zip
+# cd ../../
+ 
 # echo "#### Installing C Benchmark"
-# 
-# 
+# cd ./Languages/C-C++
+# git clone https://github.com/bamos/parsec-benchmark.git
+# cd ../../
+
+
+
+
+# NAO FEITO AINDA
+
+
+
+
 # echo "#### Installing Go"
-# sudo pacman -S go --noconfirm
+# sudo apt install go 
 # 
 # echo "#### Installing Ruby"
-# sudo pacman -S ruby --noconfirm
-# 
-# 
+# sudo apt install ruby 
 # 

@@ -80,3 +80,11 @@ Python, django_template, 1,124.071899414062500000, 48.262329101562500000,  ,  , 
 Python, django_template, 1,124.255859375000000000, 48.070251464843750000,  ,  , 52420, 33.5, 52080
 Python, django_template, 1,125.848144531250000000, 49.390808105468750000,  ,  , 52527, 33.8, 52076
 Python, django_template, 1,124.436584472656250000, 48.643310546875000000,  ,  , 52193, 34.5, 52084
+Python, chameleon, -1, error, error, error, error, error, error, error
+Python, docutils, -1, error, error, error, error, error, error, error
+Python, html5lib, -1, error, error, error, error, error, error, error
+Python, 2to3, -1, error, error, error, error, error, error, error
+Python, tornado_http, -1, error, error, error, error, error, error, error
+Python, chameleon, -1, error, error, error, error, error, error, error
+Python, docutils, -1, error, error, error, error, error, error, error
+Python, chameleon, -1, error, error, error, error, error, error, error
