@@ -1,27 +1,27 @@
 C           |  Parsec
-Rust        |
+Rust        |  https://github.com/rust-lang/rustc-perf (testar)
 C++         |  Parsec
 Ada         |
 Java        |  Dacapo
 Pascal      |
-Chapel      |
-Lisp        |
+Chapel      |  BUILT IN
+Lisp        |  https://github.com/benkard/cl-bench/tree/master (testar)
 Ocaml       |  sandmark
-Fortran     |
-Swift       |
+Fortran     |  VER DISCORD
+Swift       |  https://www.swift.org/blog/swift-benchmark-suite/ (testar)
 Haskell     |  NoFib
 C#          |
 Go          |  GO Wiki (integrated)
-Dart        |
+Dart        |  https://github.com/dart-archive/ton80 (testar)
 F#          |
 JavaScript  | 
 Racket      | 
 TypeScript  | 
 Hack        | 
-PHP         | 
-Erlang      | 
-Lua         | 
+PHP         | PHPBench (testar)
+Erlang      | https://mist.dsic.upv.es/bencher/ (testar)
+Lua         | https://github.com/softdevteam/lua_benchmarking (testar)
 Jruby       |
-Ruby        | 
+Ruby        |  RubyBench (testar)
 Python      |  PyPerformance   
-Perl        |        
+Perl        |  https://github.com/gisle/perlbench (testar)
