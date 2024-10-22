@@ -10,3 +10,6 @@ scratch
 venv
 parsec-benchmark
 nofib
+pyperformance
+Miniconda3-latest-Linux-x86_64.sh
+dist-newstyle

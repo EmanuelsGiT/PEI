@@ -48,38 +48,43 @@ for limit in -1
     # cd ../../
 
 
+
     #echo "Sleeping 100 seconds"
     #sleep 100
     
-    # Python
-    python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Python/Makefile
-    cd Languages/Python # 
-    for prog in chameleon docutils html5lib 2to3 tornado_http nbody json_dumps pidigits async_tree django_template ; #   float json_loads   async_tree_eager_io 
-        do
-        make measure i="$prog"
-        file="measurements.csv"
-        tail -n +2 "$file" >> ../../measurements_python.csv;
-        #make clean
-        sleep 5
-    done
-    cd ../../
+    # # Python
+    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Python/Makefile
+    # cd Languages/Python # 
+    # for prog in chameleon docutils html5lib 2to3 tornado_http nbody json_dumps pidigits async_tree django_template ; #   float json_loads   async_tree_eager_io 
+    #     do
+    #     make measure i="$prog"
+    #     file="measurements.csv"
+    #     tail -n +2 "$file" >> ../../measurements_python.csv;
+    #     #make clean
+    #     sleep 5
+    # done
+    # cd ../../
+
+
 
     #echo "Sleeping 10 seconds"
     #sleep 10
 
     # Haskell
-    # binary-trees fannkuch-redux fasta k-nucleotide n-body pidigits reverse-complement spectral-norm
-#       python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Haskell/Makefile
-#       cd Languages/Haskell
-#       for prog in spectral/sorting real/grep real/compress real/compress2 real/gg real/rsa imaginary/rfib shootout/binary-trees shootout/fannkuch-redux shootout/spectral-norm; #; #   
-#           do
-#           make measure i="$prog"
-#           file="measurements.csv"
-#           tail -n +2 "$file" >> ../../measurements_haskell.csv;
-#           make clean
-#           sleep 2
-#       done
-#       cd ../../
+    #binary-trees fannkuch-redux fasta k-nucleotide n-body pidigits reverse-complement spectral-norm
+    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Haskell/Makefile
+    # cd Languages/Haskell
+    # for prog in spectral/sorting real/grep real/compress real/compress2 real/gg real/rsa imaginary/rfib shootout/binary-trees shootout/fannkuch-redux shootout/spectral-norm; #; #   
+    #     do
+    #     make measure i="$prog"
+    #     file="measurements.csv"
+    #     tail -n +2 "$file" >> ../../measurements_haskell.csv;
+    #     make clean
+    #     sleep 2
+    # done
+    # cd ../../
+
+
 
     #echo "Sleeping 10 seconds"
     #sleep 10
@@ -97,6 +102,44 @@ for limit in -1
     # done
     # cd ../../
 
+
+
+    #echo "Sleeping 10 seconds"
+    #sleep 10
+
+    # # C
+    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/C/Makefile
+    # cd Languages/C
+    # for prog in blackscholes canneal fluidanimate streamcluster swaptions;  
+    #     do
+    #     make measure i="$prog"
+    #     file="measurements.csv"
+    #     tail -n +2 "$file" >> ../../measurements_c.csv;
+    #     make clean
+    #     sleep 2
+    # done
+    # cd ../../
+
+
+
+    #echo "Sleeping 10 seconds"
+    #sleep 10
+
+    # C++
+    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Cpp/Makefile
+    # cd Languages/Cpp
+    # for prog in facesim swaptions x264;   
+    #     do
+    #     make measure i="$prog"
+    #     file="measurements.csv"
+    #     tail -n +2 "$file" >> ../../measurements_cpp.csv;
+    #     make clean
+    #     sleep 2
+    # done
+    # cd ../../
+    
+    
+    
     #echo "Sleeping 10 seconds"
     #sleep 10
 
@@ -113,37 +156,9 @@ for limit in -1
     # done
     # cd ../../
 
-    #echo "Sleeping 10 seconds"
-    #sleep 10
 
-    # tratar de C
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/C/Makefile
-    # cd Languages/C
-    # for prog in app_fib app_mandelbrot app_sieve app_strconcat app_tak app_tarai app_whileloop; #; #   
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_c.csv;
-    #     make clean
-    #     sleep 2
-    # done
-    # cd ../../
 
-    #echo "Sleeping 10 seconds"
-    #sleep 10
-
-    # tratar de C++
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/C++/Makefile
-    # cd Languages/C++
-    # for prog in app_fib app_mandelbrot app_sieve app_strconcat app_tak app_tarai app_whileloop; #; #   
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_cpp.csv;
-    #     make clean
-    #     sleep 2
-    # done
-    # cd ../../
+   
 
 
     

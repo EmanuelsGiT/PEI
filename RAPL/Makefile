@@ -1,5 +1,5 @@
 main : main.c rapl.o sensors.o
-	gcc -O2  -o main main.c rapl.o sensors.o $(shell pkg-config --libs --static raplcap-powercap) -L/usr/local/lib -lraplcap-powercap -lpowercap -lm
+	gcc -O2  -o main main.c rapl.o sensors.o $(shell pkg-config --libs --static raplcap-powercap) -lm
 	chmod 777 main
 
 rapl.o : rapl.c rapl.h

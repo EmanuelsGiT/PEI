@@ -1,2 +1,11 @@
 Language, Program, PowerLimit, Package, Core(s), GPU, DRAM, Time (ms), Temperature, Memory
-Haskell, real/gg, -1, error, error, error, error, error, error, error
+Haskell, spectral/sorting, -1,193.738891601562500000, 176.013244628906250000,  ,  , 6180, 65.3, 7680
+Haskell, spectral/sorting, -1,212.533935546875000000, 190.240600585937500000,  ,  , 6517, 66.2, 7680
+Haskell, spectral/sorting, -1,275.937622070312500000, 243.183471679687500000,  ,  , 7562, 73.2, 7680
+Haskell, spectral/sorting, -1,236.052795410156250000, 209.101196289062500000,  ,  , 6975, 66.0, 7680
+Haskell, spectral/sorting, -1,271.951965332031250000, 237.567077636718750000,  ,  , 7748, 66.2, 7680
+Haskell, spectral/sorting, -1,146.007812500000000000, 128.351745605468750000,  ,  , 4368, 63.2, 7552
+Haskell, spectral/sorting, -1,5.261596679687500000, 4.702819824218750000,  ,  , 166, 57.8, 7680
+Haskell, spectral/sorting, -1,2.883117675781250000, 2.613342285156250000,  ,  , 89, 57.8, 7680
+Haskell, spectral/sorting, -1,2.607055664062500000, 2.364746093750000000,  ,  , 71, 57.8, 7680
+Haskell, spectral/sorting, -1,1.852355957031250000, 1.664916992187500000,  ,  , 54, 57.8, 7680

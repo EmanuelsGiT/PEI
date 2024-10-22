@@ -44,7 +44,9 @@ echo "Setting up dependencies..."
 # sudo apt install python3 python3-pip
 
 # echo "#### Installing Python Benchmark"
-# sudo apt install python3-venv
+# sudo apt install pipx
+# pipx install pyperformance
+
 # python3 -m venv myenv
 # source myenv/bin/activate
 # pip install pyperformance
