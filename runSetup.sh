@@ -44,12 +44,7 @@ echo "Setting up dependencies..."
 # sudo apt install python3 python3-pip
 
 # echo "#### Installing Python Benchmark"
-# sudo apt install pipx
-# pipx install pyperformance
-
-# python3 -m venv myenv
-# source myenv/bin/activate
-# pip install pyperformance
+# sudo pip install pyperformance --break-system-packages
 
 # echo "#### Installing Haskell"
 # sudo apt install ghc cabal-install 
@@ -69,21 +64,36 @@ echo "Setting up dependencies..."
 # cd ../../
  
 # echo "#### Installing C Benchmark"
-# cd ./Languages/C-C++
+# cd ./Languages/C
+# git clone https://github.com/bamos/parsec-benchmark.git
+# cd ../../
+
+# echo "#### Installing Cpp Benchmark"
+# cd ./Languages/Cpp
 # git clone https://github.com/bamos/parsec-benchmark.git
 # cd ../../
 
 
+# echo "#### Installing Ocaml Benchmark"
+# cd ./Languages/Ocaml
+# git clone https://github.com/ocaml-bench/sandmark
+# cd ../../
 
 
-# NAO FEITO AINDA
+# echo "#### Installing Ruby"
+# sudo apt install ruby 
 
 
+# echo "#### Installing Ruby Benchmark"
+# cd ./Languages/Ruby
+# git clone https://github.com/acangiano/ruby-benchmark-suite
+# cd ../../
+
+
+# POr Fazer
 
 
 # echo "#### Installing Go"
 # sudo apt install go 
 # 
-# echo "#### Installing Ruby"
-# sudo apt install ruby 
 # 

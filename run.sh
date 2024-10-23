@@ -143,7 +143,24 @@ for limit in -1
     #echo "Sleeping 10 seconds"
     #sleep 10
 
-    # tratar de Go
+    # tratar de Ocaml
+    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Ocaml/Makefile
+    # cd Languages/Ocaml
+    # for prog in app_fib app_mandelbrot app_sieve app_strconcat app_tak app_tarai app_whileloop; #; #   
+    #     do
+    #     make measure i="$prog"
+    #     file="measurements.csv"
+    #     tail -n +2 "$file" >> ../../measurements_go.csv;
+    #     make clean
+    #     sleep 2
+    # done
+    # cd ../../
+    #echo "Sleeping 10 seconds"
+    #sleep 10
+
+
+
+    # Go
     # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Go/Makefile
     # cd Languages/Go
     # for prog in app_fib app_mandelbrot app_sieve app_strconcat app_tak app_tarai app_whileloop; #; #   
@@ -157,8 +174,18 @@ for limit in -1
     # cd ../../
 
 
-
-   
+    # Ruby
+    python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Ruby/Makefile
+    cd Languages/Ruby
+    for prog in bm_app_mandelbrot.rb bm_regex_dna.rb bm_so_nbody.rb bm_gc_array.rb bm_fasta.rb bm_fannkuch.rb bm_so_mandelbrot.rb bm_partial_sums.rb bm_vm3_thread_create_join.rb bm_mergesort.rb;   
+        do
+        make measure i="$prog"
+        file="measurements.csv"
+        tail -n +2 "$file" >> ../../measurements_ruby.csv;
+        make clean
+        sleep 2
+    done
+    cd ../../
 
 
     

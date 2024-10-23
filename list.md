@@ -22,6 +22,6 @@ PHP         | PHPBench (testar)
 Erlang      | https://mist.dsic.upv.es/bencher/ (testar)
 Lua         | https://github.com/softdevteam/lua_benchmarking (testar)
 Jruby       |
-Ruby        |  RubyBench (testar)
+Ruby        |  https://github.com/acangiano/ruby-benchmark-suite
 Python      |  PyPerformance   
 Perl        |  https://github.com/gisle/perlbench (testar)
