@@ -90,6 +90,12 @@ echo "Setting up dependencies..."
 # cd ../../
 
 
+# echo "#### Installing Swift Benchmark"
+# cd ./Languages/Swift
+# git clone https://github.com/swiftlang/swift.git
+# cd ../../
+
+
 # POr Fazer
 
 
