@@ -21,7 +21,7 @@ cd ..
 echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements.csv
 
 # Loop over power limit values
-for limit in -1
+for limit in 1 2 3 4 5 6 7 8 9 10
     do
     echo ""
     echo "______Setting power limit to $limit ________________"
