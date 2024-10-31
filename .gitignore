@@ -16,3 +16,4 @@ dist-newstyle
 sandmark
 ruby-benchmark-suite
 rust
+benchmarks

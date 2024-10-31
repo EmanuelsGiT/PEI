@@ -1,6 +1,6 @@
-C           |  Parsec
-Java        |  Dacapo
-Haskell     |  NoFib
+C           |  Parsec \
+Java        |  Dacapo \
+Haskell     |  NoFib \
 Python      |  PyPerformance   
 Ruby        |  https://github.com/acangiano/ruby-benchmark-suite
 

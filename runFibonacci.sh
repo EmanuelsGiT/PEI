@@ -18,7 +18,7 @@ python3 temperatureUpdate.py
 cd ..
 
       
-echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements.csv
+echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements_fibonacci.csv
 
 # Loop over power limit values
 for limit in 1 2 3 4 5 6 7 8 9 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 -1

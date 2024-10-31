@@ -37,7 +37,7 @@ def fibonacci(n):
     #return curr
     return "Done"
 
-n = 1000000
+n = 3000000
 #Initial time
 start_time = time.time()
 
