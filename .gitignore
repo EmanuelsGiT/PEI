@@ -17,3 +17,7 @@ sandmark
 ruby-benchmark-suite
 rust
 benchmarks
+build
+cmark
+llvm-project
+swift
