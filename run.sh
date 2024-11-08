@@ -17,11 +17,9 @@ python3 temperatureUpdate.py
 
 cd ..
 
-      
-echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements.csv
 
 # Loop over power limit values
-for limit in -1
+for limit in 4 -1
     do
     echo ""
     echo "______Setting power limit to $limit ________________"
@@ -36,148 +34,67 @@ for limit in -1
     sleep 10
 
     # Java
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Java/Makefile
-    # cd Languages/Java # cassandra
-    # for prog in avrora batik biojava eclipse spring tomcat graphchi jme jython kafka ; #  fop  h2 h2o  luindex lusearch pmd  sunflow  tradebeans tradesoap xalan zxing;
-    #    do
-    #    make measure i="$prog"
-    #    file="measurements.csv"
-    #    tail -n +2 "$file" >> ../../measurements_java.csv;
-    #    sleep 3
-    #    done
-    # cd ../../
+    echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements_java.csv
+    python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Java/Makefile
+    cd Languages/Java # cassandra
+    for prog in avrora batik biojava eclipse spring tomcat graphchi jme jython kafka ; #  fop  h2 h2o  luindex lusearch pmd  sunflow  tradebeans tradesoap xalan zxing;
+       do
+       make measure i="$prog"
+       file="measurements.csv"
+       tail -n +2 "$file" >> ../../measurements_java.csv;
+       sleep 3
+       done
+    cd ../../
 
 
 
-    #echo "Sleeping 100 seconds"
-    #sleep 100
+    echo "Sleeping 100 seconds"
+    sleep 100
     
     # # Python
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Python/Makefile
-    # cd Languages/Python # 
-    # for prog in chameleon docutils html5lib 2to3 tornado_http nbody json_dumps pidigits async_tree django_template ; #   float json_loads   async_tree_eager_io 
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_python.csv;
-    #     #make clean
-    #     sleep 5
-    # done
-    # cd ../../
+    echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements_py.csv
+    python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Python/Makefile
+    cd Languages/Python # 
+    for prog in chameleon docutils html5lib 2to3 tornado_http nbody json_dumps pidigits async_tree django_template ; #   float json_loads   async_tree_eager_io 
+        do
+        make measure i="$prog"
+        file="measurements.csv"
+        tail -n +2 "$file" >> ../../measurements_python.csv;
+        #make clean
+        sleep 5
+    done
+    cd ../../
 
 
 
-    #echo "Sleeping 10 seconds"
-    #sleep 10
+    echo "Sleeping 100 seconds"
+    sleep 100
 
     # Haskell
-    #binary-trees fannkuch-redux fasta k-nucleotide n-body pidigits reverse-complement spectral-norm
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Haskell/Makefile
-    # cd Languages/Haskell
-    # for prog in spectral/sorting real/grep real/compress real/compress2 real/gg real/rsa imaginary/rfib shootout/binary-trees shootout/fannkuch-redux shootout/spectral-norm; #; #   
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_haskell.csv;
-    #     make clean
-    #     sleep 2
-    # done
-    # cd ../../
+    # binary-trees fannkuch-redux fasta k-nucleotide n-body pidigits reverse-complement spectral-norm
+    echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements_haskell.csv
+    python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Haskell/Makefile
+    cd Languages/Haskell
+    for prog in spectral/sorting real/grep real/compress real/compress2 real/gg real/rsa imaginary/rfib shootout/binary-trees shootout/fannkuch-redux shootout/spectral-norm; 
+        do
+        make measure i="$prog"
+        file="measurements.csv"
+        tail -n +2 "$file" >> ../../measurements_haskell.csv;
+        make clean
+        sleep 2
+    done
+    cd ../../
 
 
 
-    #echo "Sleeping 10 seconds"
-    #sleep 10
-
-    # tratar de Ruby
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Ruby/Makefile
-    # cd Languages/Ruby
-    # for prog in app_objects app_fib app_mandelbrot app_sieve app_strconcat app_tak app_tarai app_whileloop; #; #   
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_ruby.csv;
-    #     make clean
-    #     sleep 2
-    # done
-    # cd ../../
-
-
-
-    #echo "Sleeping 10 seconds"
-    #sleep 10
-
-    # # C
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/C/Makefile
-    # cd Languages/C
-    # for prog in blackscholes canneal fluidanimate streamcluster swaptions;  
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_c.csv;
-    #     make clean
-    #     sleep 2
-    # done
-    # cd ../../
-
-
-
-    #echo "Sleeping 10 seconds"
-    #sleep 10
-
-    # C++
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Cpp/Makefile
-    # cd Languages/Cpp
-    # for prog in facesim swaptions x264;   
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_cpp.csv;
-    #     make clean
-    #     sleep 2
-    # done
-    # cd ../../
-    
-    
-    
-    #echo "Sleeping 10 seconds"
-    #sleep 10
-
-    # tratar de Ocaml
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Ocaml/Makefile
-    # cd Languages/Ocaml
-    # for prog in app_fib app_mandelbrot app_sieve app_strconcat app_tak app_tarai app_whileloop; #; #   
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_go.csv;
-    #     make clean
-    #     sleep 2
-    # done
-    # cd ../../
-    #echo "Sleeping 10 seconds"
-    #sleep 10
-
-
-
-    # Go
-    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Go/Makefile
-    # cd Languages/Go
-    # for prog in app_fib app_mandelbrot app_sieve app_strconcat app_tak app_tarai app_whileloop; #; #   
-    #     do
-    #     make measure i="$prog"
-    #     file="measurements.csv"
-    #     tail -n +2 "$file" >> ../../measurements_go.csv;
-    #     make clean
-    #     sleep 2
-    # done
-    # cd ../../
-
+    echo "Sleeping 100 seconds"
+    sleep 100
 
     # Ruby
+    echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements_ruby.csv
     python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Ruby/Makefile
     cd Languages/Ruby
-    for prog in bm_app_mandelbrot.rb bm_regex_dna.rb bm_so_nbody.rb bm_gc_array.rb bm_fasta.rb bm_fannkuch.rb bm_so_mandelbrot.rb bm_partial_sums.rb bm_vm3_thread_create_join.rb bm_mergesort.rb;   
+    for prog in app_objects app_fib app_mandelbrot app_sieve app_strconcat app_tak app_tarai app_whileloop; 
         do
         make measure i="$prog"
         file="measurements.csv"
@@ -188,11 +105,45 @@ for limit in -1
     cd ../../
 
 
+
+    echo "Sleeping 100 seconds"
+    sleep 100
+
+    # C
+    echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements_c.csv
+    python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/C/Makefile
+    cd Languages/C
+    for prog in blackscholes canneal fluidanimate streamcluster swaptions;  
+        do
+        make measure i="$prog"
+        file="measurements.csv"
+        tail -n +2 "$file" >> ../../measurements_c.csv;
+        make clean
+        sleep 2
+    done
+    cd ../../
+
+
+    # echo "Sleeping 100 seconds"
+    # sleep 100
+
+    # # Rust
+    # echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory" > measurements_rust.csv
+    # python3 ./Utils/ntimesUpdate.py $NTIMES ./Languages/Rust/Makefile
+    # cd Languages/Rust
+    # for prog in blackscholes canneal fluidanimate streamcluster swaptions;  
+    #     do
+    #     make measure i="$prog"
+    #     file="measurements.csv"
+    #     tail -n +2 "$file" >> ../../measurements_rust.csv;
+    #     make clean
+    #     sleep 2
+    # done
+    # cd ../../
+
     
 done
 
 cd RAPL/
 make clean
 cd ..
-
-#sudo reboot
