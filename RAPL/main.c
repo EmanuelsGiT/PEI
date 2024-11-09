@@ -15,7 +15,7 @@
 #include <sys/time.h>
 
 
-#define TEMPERATURETHRESHOLD 34.0
+#define TEMPERATURETHRESHOLD 44.66666793823242
 #define VARIANCE 8 // 5
 #define WHATTSCAP -1
 #define MAX_STRING_LENGTH 500
