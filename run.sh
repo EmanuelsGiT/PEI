@@ -1,8 +1,8 @@
 #!/bin/bash
-NTIMES=1
+NTIMES=10
 
-#echo "sleeping 100"
-#sleep 100
+echo "sleeping 100"
+sleep 100
 
 #Compile sensors wich will be used to calculate cool temperature
 cd RAPL
@@ -10,8 +10,8 @@ echo "Compiling sensors"
 gcc -shared -o sensors.so sensors.c
 cd ..
 
-#sleep 10
-#Update the temperature value
+sleep 10
+echo "Update the temperature value"
 cd Utils/
 python3 temperatureUpdate.py
 
@@ -28,7 +28,7 @@ echo "Language,Program,PowerLimit,Package,Core,GPU,DRAM,Time,Temperature,Memory"
 
 
 # Loop over power limit values
-for limit in -1
+for limit in 4 -1;
     do
     echo ""
     echo "______Setting power limit to $limit ________________"
