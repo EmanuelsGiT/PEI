@@ -15,7 +15,7 @@ Miniconda3-latest-Linux-x86_64.sh
 dist-newstyle
 sandmark
 ruby-benchmark-suite
-rust
+Rust/rust
 benchmarks
 build
 cmark

@@ -96,10 +96,15 @@ echo "Setting up dependencies..."
 # cd ../../
 
 
-# POr Fazer
+# echo "#### Installing Rust"
+# sudo apt  install rustc
+
+# echo "#### Installing Rust Benchmark"
+# cd ./Languages/Rust/benchmarksRust
+# make
+# cd ../../../
+
 
 
 # echo "#### Installing Go"
 # sudo apt install go 
-# 
-# 

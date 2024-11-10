@@ -1,6 +1,6 @@
 # avrora batik biojava cassandra eclipse fop graphchi h2 h2o jme jython kafka luindex lusearch pmd spring sunflow tomcat tradebeans tradesoap xalan zxing
 
-NTIMES=10
+NTIMES=1
 
 export NTIMES
 
