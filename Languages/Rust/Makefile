@@ -1,6 +1,6 @@
 # 100door Ackermann fibonacci hailstone mergeSort N-Queens quickSort removeDuplicateElements SieveOfEratosthenes
 
-NTIMES=1
+NTIMES=10
 
 export NTIMES
 

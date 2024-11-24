@@ -12,12 +12,10 @@
 #include <math.h>
 #include "rapl.h"
 #include "sensors.h"
-#include <sys/time.h>
 
-
-#define TEMPERATURETHRESHOLD 41.16666793823242
+#define TEMPERATURETHRESHOLD 36.83333206176758
 #define VARIANCE 8 // 5
-#define WHATTSCAP -1
+#define WHATTSCAP 20
 #define MAX_STRING_LENGTH 500
 #define MAX_COMMAND_LENGTH 500
 #define MEASUREMENTS_FILE "measurements.csv"

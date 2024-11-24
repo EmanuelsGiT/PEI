@@ -15,28 +15,28 @@ echo "Setting up dependencies..."
 # echo "### Installing Sloc Cloc and Code (scc)"
 # sudo snap install scc 
 
-# echo "#### Installing Powercap"
-# git clone https://github.com/powercap/powercap.git
-# cd powercap
-# mkdir _build
-# cd _build
-# cmake ..
-# make
-# sudo make install
+echo "#### Installing Powercap"
+git clone https://github.com/powercap/powercap.git
+cd powercap
+mkdir _build
+cd _build
+cmake ..
+make
+sudo make install
 
-# cd ../../
+cd ../../
  
 # echo "#### Installing package config"
 # sudo apt install pkg-config 
 
-# echo "#### Installing Raplcap"
-# git clone https://github.com/powercap/raplcap.git
-# cd raplcap 
-# mkdir _build
-# cd _build
-# cmake ..
-# make
-# sudo make install
+echo "#### Installing Raplcap"
+git clone https://github.com/powercap/raplcap.git
+cd raplcap 
+mkdir _build
+cd _build
+cmake ..
+make
+sudo make install
  
 # cd ../../
 
